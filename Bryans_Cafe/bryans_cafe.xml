@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bryans_cafe.xsl"?>
+<!DOCTYPE cafe SYSTEM "bryans_cafe.dtd">
+<cafe>
+  <brand>Bryan's Caf&#233;</brand>
+  <tagline>Today's lunch menu</tagline>
+  <introduction>A fresh midday table of bright salads, savoury bakes and generous sandwiches.</introduction>
+  <menu>
+    <item id="beetroot-salad" dietary="vegetarian">
+      <name>Beetroot and feta salad</name>
+      <price currency="AUD">15.00</price>
+      <description>Roasted beetroot, baby leaves, pickled pear, walnuts, vegetarian feta and a lemon-herb dressing.</description>
+    </item>
+    <item id="rye-sandwich" dietary="contains-chicken">
+      <name>Sourdough Rye Sandwich</name>
+      <price currency="AUD">18.00</price>
+      <description>Grilled chicken, cos lettuce, tomato and mustard mayonnaise on toasted sourdough rye.</description>
+    </item>
+    <item id="spinach-pie" dietary="vegetarian">
+      <name>Spinach Pie and Salad</name>
+      <price currency="AUD">20.00</price>
+      <description>Golden pastry filled with spinach, ricotta and vegetarian feta, served with a crisp garden salad.</description>
+    </item>
+    <item id="feta-pancakes" dietary="vegetarian">
+      <name>Feta pancakes with salad</name>
+      <price currency="AUD">19.50</price>
+      <description>Savoury egg-and-buttermilk pancakes with vegetarian feta, herbs and a fresh tomato and rocket salad.</description>
+    </item>
+  </menu>
+  <media>
+    <image src="food.gif" alt="An original animated illustration of a colourful green salad with tomato and feta on a white plate." width="360" height="300" />
+    <audio src="food.wav" type="audio/wav" title="A short original cafe chime" />
+  </media>
+  <footer>
+    <copyright>Copyright 2026 Bryan's Caf&#233;. All rights reserved.</copyright>
+  </footer>
+</cafe>

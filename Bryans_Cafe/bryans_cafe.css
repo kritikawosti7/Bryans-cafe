@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@500;600;700&display=swap');
+
+:root {
+  color-scheme: light;
+  --white: #ffffff;
+  --mist: #eff5ef;
+  --leaf: #dcebd8;
+  --green: #24523b;
+  --deep-green: #173d2d;
+  --fresh-green: #5e8a5d;
+  --ink: #20372b;
+  --muted: #647568;
+  --line: #d4e0d4;
+  --tomato: #98513f;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--white);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+a { color: inherit; }
+
+.masthead {
+  min-height: 590px;
+  padding: 5rem max(7vw, calc((100vw - 1200px) / 2));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .9fr);
+  align-items: center;
+  gap: 5rem;
+  color: var(--white);
+  background: var(--deep-green);
+}
+.masthead-copy { max-width: 620px; animation: arrive .7s ease-out both; }
+.eyebrow { margin: 0 0 .8rem; color: var(--fresh-green); font-size: .75rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.masthead .eyebrow { color: #b7d5ad; }
+h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; }
+h1 { max-width: 8ch; margin: 0; font-size: 5.5rem; line-height: 1; }
+.tagline { margin: 1.2rem 0 .8rem; color: #d8ebd3; font-family: 'Fraunces', Georgia, serif; font-size: 1.55rem; }
+.intro { max-width: 48ch; color: #d3e2d5; line-height: 1.8; }
+.menu-link { display: inline-flex; gap: .75rem; align-items: center; margin-top: 1.5rem; padding: .8rem 1rem; border: 1px solid #c1d9bf; color: var(--white); font-size: .9rem; font-weight: 700; text-decoration: none; }
+.menu-link:hover, .menu-link:focus-visible { color: var(--deep-green); background: var(--white); }
+.food-figure { margin: 0; text-align: center; animation: arrive .85s .12s ease-out both; }
+.food-figure img { display: block; width: min(100%, 360px); height: auto; margin: auto; border: 10px solid #ffffff; border-radius: 50%; box-shadow: 0 20px 55px #081e142e; }
+.food-figure figcaption { margin-top: 1rem; color: #c3d8c5; font-family: 'Fraunces', Georgia, serif; font-style: italic; }
+
+.menu-section { padding: 5rem max(7vw, calc((100vw - 1200px) / 2)) 6rem; background: var(--white); }
+.section-heading { margin-bottom: 2rem; }
+h2 { margin: 0; font-size: 3rem; line-height: 1.15; }
+.menu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.dish { min-height: 245px; padding: 1.6rem 1.8rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); animation: arrive .55s ease-out both; }
+.dish:nth-child(2) { animation-delay: .08s; }
+.dish:nth-child(3) { animation-delay: .16s; }
+.dish:nth-child(4) { animation-delay: .24s; }
+.dish-number { margin: 0 0 .8rem; color: var(--fresh-green); font-size: .75rem; font-weight: 700; }
+.dish-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: .75rem; }
+.dish h3 { max-width: 20ch; margin: 0; font-size: 1.55rem; line-height: 1.2; }
+.dietary { flex: 0 0 auto; margin-top: .2rem; padding: .35rem .5rem; border: 1px solid var(--line); color: var(--muted); font-size: .68rem; font-weight: 700; }
+.dietary.vegetarian { border-color: #b7d3b2; color: var(--green); background: var(--mist); }
+.dietary.contains-chicken { border-color: #e2c6bd; color: #814332; background: #fbf3f0; }
+.description { max-width: 54ch; color: var(--muted); font-size: .94rem; line-height: 1.7; }
+.price { margin: 1rem 0 0; color: var(--green); font-size: 1.15rem; font-weight: 700; }
+.currency { margin-right: .25rem; font-size: .72rem; letter-spacing: .08em; }
+
+.sound-section { display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding: 2.5rem max(7vw, calc((100vw - 1200px) / 2)); color: var(--white); background: var(--green); }
+.sound-section .eyebrow { color: #d3e7c7; }
+.sound-section h2 { font-size: 2rem; }
+.sound-section audio { width: min(100%, 360px); }
+footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5rem max(7vw, calc((100vw - 1200px) / 2)); color: var(--muted); background: var(--mist); font-size: .82rem; }
+footer p { margin: 0; }
+.back-to-top { text-decoration: none; }
+.back-to-top:hover, .back-to-top:focus-visible { color: var(--green); text-decoration: underline; }
+
+@keyframes arrive { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
+@media (max-width: 760px) {
+  .masthead { min-height: 0; grid-template-columns: 1fr; padding: 3.5rem 7vw 3rem; gap: 2rem; }
+  h1 { font-size: 4rem; }
+  h2 { font-size: 2.2rem; }
+  .sound-section h2 { font-size: 1.6rem; }
+  .food-figure img { width: min(76vw, 300px); }
+  .menu-section { padding: 3.5rem 7vw 4rem; }
+  .menu-grid { grid-template-columns: 1fr; }
+  .dish { min-height: 0; padding: 1.4rem; }
+  .sound-section { align-items: flex-start; flex-direction: column; padding: 2rem 7vw; }
+  .sound-section audio { width: 100%; }
+  footer { padding: 1.25rem 7vw; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 3.4rem; }
+  .dish-heading { flex-direction: column; }
+  footer { align-items: flex-start; flex-direction: column; }
+}
