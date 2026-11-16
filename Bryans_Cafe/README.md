@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bryan's Cafe: XML project
 
 This project stores the lunch-menu content in XML, checks its structure with an external DTD, and uses XSLT to render browser-compatible HTML. The transformed page loads its own green-and-white CSS, animated GIF and WAV audio. XML by itself does not play media; the XSLT output supplies the HTML image and audio elements.
@@ -106,3 +107,6 @@ For hosting, publish the entire `Bryans_Cafe` folder to a course-approved static
 Capture screenshots of: VS Code Explorer with all files; XML declaration and DTD/XSL references; DTD dietary enumeration; actual validator output; desktop menu with all prices and labels; mobile layout; GIF in motion (screen recording is stronger evidence); audio controls during playback; and, if hosted, the URL and rendered page. Keep measured results and corrections in the table above.
 
 **Observed browser note (2026-11-15).** Embedded Chromium rendered the XSLT page and media but logged an external-DTD MIME warning and an XSLT-processing-instruction deprecation warning. The XML validity result above comes from the independent .NET validator, not from the browser. Confirm behavior in the assessment browsers and target host; if XSLT processing is unavailable, use a course-approved transformation/build step while retaining these XML and DTD source files.
+=======
+https://kritikawosti7.github.io/Bryans-cafe/
+>>>>>>> 03d267cd6d725ea19b47f1bb84f3231a70dffbb1
